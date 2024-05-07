@@ -1,0 +1,73 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: Helvetica;
+    font-size: 1rem;
+    line-height: 2;
+    background-image: url(../img/survey-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+/* Globales */
+header {
+    text-align: center;
+    line-height: 0.5;
+    padding-bottom: 1rem;
+    color:#267097;
+}
+
+.contenedor {
+    max-width: 40rem;
+    width: 90%;
+    margin: 0 auto; /* Permite centrar el contenedor */
+    background-color: #267097
+}
+
+/* Especificos */
+
+.campo {
+    display: block;
+}
+
+.button, .texto, #dropdown {
+  height: 2rem;
+  width: 100%;
+}
+
+#comments {
+  width: 100%;
+}
+
+p {
+  font-style: italic;
+  font-weight: 700;
+  color: #000000;
+}
+
+.campo-label {
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+fieldset {
+  border: none;
+}
+
+.button {
+  margin: 1rem 0 2rem 0;
+  font-weight: 700;
+  padding: 0.5rem 0 1.5rem 0;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
